@@ -1,0 +1,147 @@
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("img/uno_melhorada.jpeg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .player {
+            position: absolute;
+            width: 100px;
+            height: 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .player1 {
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .player2 {
+            top: 50%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+        }
+
+        .player3 {
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .player4 {
+            top: 50%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .footer {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            background-color: #8B4513;
+            width: 200px;
+            height: 90px;
+            margin-top: -35px;
+            margin-left: 90px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left; 
+            padding-left: 30px; 
+        }
+        
+        .avatar {
+            background-image: url("img/robot.jpeg");
+            width: 80px;
+            height: 80px;
+            background-size: cover;
+        }
+
+        .img{
+            width: 200px;
+            margin-top: 100px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 5px;
+        }
+
+        .card {
+            width: 100px;
+            height: 30px;
+            background-color: red;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .name1 {
+            font-weight: bold;
+            color: white;
+        }
+
+        .uno-button {
+            position: absolute;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media (max-width: 768px) {
+            .game-board {
+                width: 80%;
+                height: 80%;
+            }
+
+            .player {
+                width: 80px;
+                height: 120px;
+            }
+
+            .botao {
+                width: 25px;
+                height: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .game-board {
+                width: 90%;
+                height: 90%;
+            }
+
+            .player {
+                width: 60px;
+                height: 100px;
+            }
+
+            .card {
+                width: 20px;
+                height: 30px;
+            }
+
+            .uno-button {
+                padding: 15px;
+                font-size: 18px;
+            }
+        }
